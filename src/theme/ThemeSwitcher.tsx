@@ -86,6 +86,8 @@ const ThemeSwitcher = ({ children }: ThemeSwitcherProps): React.ReactElement => 
         }
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        // fix for mobile devices
+        onTouchStart={() => setIsHovered(true)}
         onTouchEnd={() => setIsHovered(false)}
       >
         <StyledThemeText isHovered={isHovered}>
