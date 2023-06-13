@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Icon from '@mdi/react';
 import { mdiLightbulb } from '@mdi/js';
-import { themes } from 'theme/theme';
+import { device, themes } from 'theme/theme';
 
 interface ThemeSwitcherProps {
   children: React.ReactNode;
@@ -13,10 +13,14 @@ const StyledThemeSwitcher = styled.div`
   margin: 15px;
   position: absolute;
   right: 0;
-  top: 30px;
+  top: 2rem;
   z-index: 1;
 
   font-size: 0.9rem;
+
+  @media ${device.m} {
+    top: 3rem;
+  }
 `;
 
 const StyledThemeText = styled.div<{ isHovered: boolean }>`
@@ -82,6 +86,7 @@ const ThemeSwitcher = ({ children }: ThemeSwitcherProps): React.ReactElement => 
         }
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onTouchEnd={() => setIsHovered(false)}
       >
         <StyledThemeText isHovered={isHovered}>
           Turn {isDarkTheme ? 'on' : 'off'} the lights!
