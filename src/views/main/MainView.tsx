@@ -190,7 +190,7 @@ const MainView = (): React.ReactElement => (
         Hey!👋🏻 I am Krisjanis Lejejs!<StyledBlinkingCursor>|</StyledBlinkingCursor>
       </span>
     </StyledH1>
-    <StyledH2Primary>Bachelor student of IT leadership in Riga Business School</StyledH2Primary>
+    <StyledH2Primary>Full-stack Developer at Accenture | Master's Student of Computer Science</StyledH2Primary>
     <StyledH2Secondary>...</StyledH2Secondary>
     <StyledH4>
       <Icon path={mdiMapMarker} size={null} color={null} />
