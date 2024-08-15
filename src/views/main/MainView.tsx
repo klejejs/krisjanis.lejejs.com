@@ -190,7 +190,7 @@ const MainView = (): React.ReactElement => (
         Hey!👋🏻 I am Krisjanis Lejejs!<StyledBlinkingCursor>|</StyledBlinkingCursor>
       </span>
     </StyledH1>
-    <StyledH2Primary>Full-stack Developer at Accenture | Master's Student of Computer Science</StyledH2Primary>
+    <StyledH2Primary>Cloud Infrastructure Developer at Nabu Casa, Home Assistant</StyledH2Primary>
     <StyledH2Secondary>...</StyledH2Secondary>
     <StyledH4>
       <Icon path={mdiMapMarker} size={null} color={null} />
@@ -224,11 +224,7 @@ const MainView = (): React.ReactElement => (
       >
         <Icon path={mdiInstagram} size={null} color={null} />
       </StyledLinkIcon>
-      <StyledLinkIcon
-        href='https://cv.lejejs.com/krisjanis2000/krisjanis-lejejs'
-        target='_blank'
-        rel='noreferrer'
-      >
+      <StyledLinkIcon href='https://krisjanis.lejejs.com/cv.pdf' target='_blank' rel='noreferrer'>
         <Icon path={mdiFilePdfBox} size={null} color={null} />
       </StyledLinkIcon>
     </div>
